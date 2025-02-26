@@ -335,7 +335,7 @@ namespace RainMeadow {
             return "Unknown Lan Lobby";
         }
         public override void OpenInvitationOverlay() {
-            OnlineManager.instance.manager.ShowDialog(new DialogNotify("You cannot use this feature here.", OnlineManager.instance.manager, null));
+            OnlineManager.instance.manager.ShowDialog(new DialogNotify(Utils.Translate("You cannot use this feature here."), OnlineManager.instance.manager, null));
         }
     }
 }

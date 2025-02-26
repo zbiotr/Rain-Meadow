@@ -200,7 +200,7 @@ namespace RainMeadow
                 }
                 if (onlineDifficultyLabel != null)
                 {
-                    onlineDifficultyLabel.text = GetCurrentCampaignName() + (string.IsNullOrEmpty(storyGameMode.region) ? Translate(" - New Game") : $" - {storyGameMode.region}");
+                    onlineDifficultyLabel.text = GetCurrentCampaignName() + (string.IsNullOrEmpty(storyGameMode.region) ? Translate(" - New Game") : " - " + Translate(storyGameMode.region));
                 }
             }
         }
